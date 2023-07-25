@@ -81,7 +81,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 180px;
     gap: 60px;
 }
 
@@ -101,7 +100,6 @@
 
 .planet-page-mobile .show-wrapper .texts .planet-content p {
     font-family: var(--league-spartan);
-    height: 6rem;
     font-size: 1.1rem;    
     font-weight: 300;
     color: var(--menu-color);
@@ -161,8 +159,11 @@
     font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .planet-page-mobile .show-choices {
        gap: 20px;
+    }
+    .planet-page-mobile .show-wrapper .texts .planet-content p {
+        width: 50%;
     }
 }
