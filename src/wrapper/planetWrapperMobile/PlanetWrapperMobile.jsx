@@ -80,18 +80,20 @@ const PlanetWrapperMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
                 <div className="planet-name">
                     <h1>{ data.name }</h1>
                 </div>
-                <div className="planet-content">
-                    <p>{ content }</p>
+                <div className="texts">
+                    <div className="planet-content">
+                        <p>{ content }</p>
+                    </div>
+                    <div className="planet-source">
+                        <p>Source: </p>
+                        <a href={ source } target='_blank'>
+                            <p>Wikipedia</p>    
+                        </a>
+                        <a href={ source } target='_blank'>                       
+                            <img src={ iconSource } alt="new tab img" />
+                        </a>  
+                    </div>  
                 </div>
-                <div className="planet-source">
-                    <p>Source: </p>
-                    <a href={ source } target='_blank'>
-                        <p>Wikipedia</p>    
-                    </a>
-                    <a href={ source } target='_blank'>                       
-                        <img src={ iconSource } alt="new tab img" />
-                    </a>  
-                </div>    
             </div>
             <div className="stats-wrapper">
                 <div className="stats">
