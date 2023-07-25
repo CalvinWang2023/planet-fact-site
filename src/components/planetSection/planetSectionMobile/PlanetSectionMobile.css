@@ -10,9 +10,9 @@
 .planet-page-mobile .show-choices {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    width: 85%;
 }
 
 .planet-page-mobile .show-choices button {
@@ -20,8 +20,7 @@
     border: none;  
     color: var(--menu-color);
     text-transform: uppercase;
-    padding: 20px;
-
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +55,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: 1px red solid;
 }
 
 .planet-page-mobile .show-wrapper .planet-container {
@@ -65,13 +63,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 70%;
-    border: 1px red solid;
+    width: 85%;
 }
 
 .planet-page-mobile .show-wrapper .planet-container img {
     transform: scale(.5);
-    border: 1px red solid;
 }
 
 .planet-page-mobile .show-wrapper .planet-container .geology-img {
@@ -111,7 +107,7 @@
     line-height: 1.3;
     text-align: center;
 
-    width: 70%;
+    width: 85%;
 
     margin: 0 auto;
 }
@@ -149,7 +145,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 85%;
     border: .8px solid var(--menu-color); 
     padding: 12px;
 }
@@ -165,14 +161,8 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .planet-page-mobile .show-choices {
+    /* .planet-page-mobile .show-choices {
        gap: 20px;
-    }
-    /* .planet-page-mobile .show-wrapper .planet-container {
-        width: 70%;
-    }
-    .planet-page-mobile .show-wrapper .texts .planet-content p {
-        width: 70%;
     } */
     .planet-page-mobile .stats-wrapper .stats p {
         font-size: .9rem;
