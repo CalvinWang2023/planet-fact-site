@@ -56,7 +56,7 @@
 }
 
 .header-desktop .menu-list .planet button {
-    background: red;
+    background: transparent;
     border: none;
     font-size: 1rem;
     color: var(--menu-color);
