@@ -4,6 +4,7 @@
     align-items: center;
 
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .planet-page-mobile .show-choices {
@@ -158,4 +159,10 @@
 .planet-page-mobile .stats-wrapper .stats h1 {
     color: var(--title-color);
     font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .planet-page-mobile .show-choices {
+       gap: 20px;
+    }
 }
