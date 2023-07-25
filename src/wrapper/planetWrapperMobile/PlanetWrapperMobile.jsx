@@ -77,7 +77,7 @@ const PlanetWrapperMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
                     <img src={ planetImage } alt="planet img" className='planet-img' />
                     { geologyImg }
                 </div>
-                <div className="planet-name">
+                <div className={show === '2' ? 'planet-name posi-down' : 'planet-name'}>
                     <h1>{ data.name }</h1>
                 </div>
                 <div className="texts">

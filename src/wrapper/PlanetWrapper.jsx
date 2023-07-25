@@ -12,7 +12,7 @@ const PlanetWrapper = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => 
     }, [window.innerWidth]);
 
     return (
-        innerWidth > 850 ? 
+        innerWidth > 810 ? 
                         <PlanetWrapperDesktop data={ data } 
                                               imgPlanet={ imgPlanet } 
                                               imgInternal={ imgInternal } 

@@ -12,7 +12,7 @@ const Header = () => {
         })
     }, [window.innerWidth]);
 
-    const Header = innerWidth > 850 ? <HeaderDesktop /> : <HeaderMobile />;
+    const Header = innerWidth > 810 ? <HeaderDesktop /> : <HeaderMobile />;
 
     return Header;
 }

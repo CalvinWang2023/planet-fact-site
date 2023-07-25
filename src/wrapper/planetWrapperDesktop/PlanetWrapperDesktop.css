@@ -76,9 +76,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 30px;
-    width: 40%;
+    gap: 10px;
 }
 
 .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source p {
@@ -202,10 +202,6 @@
     .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-content p {
         font-size: 1.1rem;
         height: 9rem;
-    }
-
-    .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source {
-        width: 165px;
     }
 
     .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source p {
