@@ -164,6 +164,13 @@
        gap: 20px;
     }
     .planet-page-mobile .show-wrapper .texts .planet-content p {
-        width: 50%;
+        width: 60%;
+    }
+    .planet-page-mobile .stats-wrapper .stats p {
+        font-size: .9rem;
+    }
+    
+    .planet-page-mobile .stats-wrapper .stats h1 {
+        font-size: 1.2rem;
     }
 }

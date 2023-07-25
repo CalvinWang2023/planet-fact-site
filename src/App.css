@@ -35,7 +35,7 @@ body {
     animation: scrolling-stars 30s linear infinite;
 
     min-height: 100vh;
-
+    overflow-x: hidden;
 }
 
 @keyframes scrolling-stars {
