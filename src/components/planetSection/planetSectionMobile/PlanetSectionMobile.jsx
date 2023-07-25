@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import iconSource from '../../assets/icon-source.svg';
-import './PlanetWrapperMobile.css';
+import iconSource from '../../../assets/icon-source.svg';
+import './PlanetSectionMobile.css';
 
-const PlanetWrapperMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
+const PlanetSectionMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
     const [show, setShow] = useState('0');
 
     const geologyImg = 
@@ -117,4 +117,4 @@ const PlanetWrapperMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
     )
 }
 
-export default PlanetWrapperMobile
+export default PlanetSectionMobile

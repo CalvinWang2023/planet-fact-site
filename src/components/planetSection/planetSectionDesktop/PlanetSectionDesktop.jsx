@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import iconSource from '../../assets/icon-source.svg';
-import './PlanetWrapperDesktop.css';
+import iconSource from '../../../assets/icon-source.svg';
+import './PlanetSectionDesktop.css';
 
-const PlanetWrapperDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
+const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
     const [show, setShow] = useState('0');
 
     const geologyImg = 
@@ -124,4 +124,4 @@ const PlanetWrapperDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet
     )
 }
 
-export default PlanetWrapperDesktop
+export default PlanetSectionDesktop

@@ -1,4 +1,4 @@
-import PlanetWrapper from '../../wrapper/PlanetWrapper';
+import PlanetSection from '../../components/planetSection/PlanetSection';
 import marsImg from '../../assets/planet-mars.svg';
 import marsInternal from '../../assets/planet-mars-internal.svg';
 import marsGeology from '../../assets/geology-mars.png';
@@ -7,7 +7,7 @@ const Mars = ({ data }) => {
     console.log(data);
     if (data !== undefined) {
         return (
-            <PlanetWrapper 
+            <PlanetSection 
                 data={ data } 
                 imgPlanet={ marsImg } 
                 imgInternal={ marsInternal } 

@@ -1,4 +1,4 @@
-import PlanetWrapper from '../../wrapper/PlanetWrapper';
+import PlanetSection from '../../components/planetSection/PlanetSection';
 import earthImg from '../../assets/planet-earth.svg';
 import earthInternal from '../../assets/planet-earth-internal.svg';
 import earthGeology from '../../assets/geology-earth.png';
@@ -6,7 +6,7 @@ import earthGeology from '../../assets/geology-earth.png';
 const Earth = ({ data }) => {
     if (data !== undefined) {
         return (
-            <PlanetWrapper 
+            <PlanetSection 
                 data={ data } 
                 imgPlanet={ earthImg } 
                 imgInternal={ earthInternal } 

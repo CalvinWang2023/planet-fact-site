@@ -1,4 +1,4 @@
-import PlanetWrapper from '../../wrapper/PlanetWrapper';
+import PlanetSection from '../../components/planetSection/PlanetSection';
 import mercuryImg from '../../assets/planet-mercury.svg';
 import mercuryInternal from '../../assets/planet-mercury-internal.svg';
 import mercuryGeology from '../../assets/geology-mercury.png';
@@ -6,7 +6,7 @@ import mercuryGeology from '../../assets/geology-mercury.png';
 const Mercury = ({ data }) => {
     if (data !== undefined) {
         return (
-            <PlanetWrapper 
+            <PlanetSection 
                 data={ data } 
                 imgPlanet={ mercuryImg } 
                 imgInternal={ mercuryInternal } 

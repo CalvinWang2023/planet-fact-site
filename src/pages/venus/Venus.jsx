@@ -1,4 +1,4 @@
-import PlanetWrapper from '../../wrapper/PlanetWrapper';
+import PlanetSection from '../../components/planetSection/PlanetSection';
 import venusImg from '../../assets/planet-venus.svg';
 import venusInternal from '../../assets/planet-venus-internal.svg';
 import venusGeology from '../../assets/geology-venus.png';
@@ -6,7 +6,7 @@ import venusGeology from '../../assets/geology-venus.png';
 const Venus = ({ data }) => {
     if (data !== undefined) {
         return (
-            <PlanetWrapper 
+            <PlanetSection 
                 data={ data } 
                 imgPlanet={ venusImg } 
                 imgInternal={ venusInternal } 

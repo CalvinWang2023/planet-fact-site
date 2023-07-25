@@ -1,4 +1,4 @@
-import PlanetWrapper from '../../wrapper/PlanetWrapper';
+import PlanetSection from '../../components/planetSection/PlanetSection';
 import uranusImg from '../../assets/planet-uranus.svg';
 import uranusInternal from '../../assets/planet-uranus-internal.svg';
 import uranusGeology from '../../assets/geology-uranus.png';
@@ -6,7 +6,7 @@ import uranusGeology from '../../assets/geology-uranus.png';
 const Uranus = ({ data }) => {
     if (data !== undefined) {
         return (
-            <PlanetWrapper 
+            <PlanetSection 
                 data={ data } 
                 imgPlanet={ uranusImg } 
                 imgInternal={ uranusInternal } 
