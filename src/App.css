@@ -31,14 +31,27 @@
 
 body {
     background-image: url('./assets/background-stars.svg');
-    background-color: rgb(5, 5, 32);
-    animation: scrolling-stars 30s linear infinite;
-
-    min-height: 100vh;
+    background-color: rgb(5, 5, 32);;
+    background-position: top left;
+    background-repeat: repeat;
+    position: absolute;
+    z-index: -999;
+    -webkit-animation: scrolling-stars 30s linear infinite;
+            animation: scrolling-stars 30s linear infinite;
+    animation-direction: alternate;
     overflow-x: hidden;
 }
 
 @keyframes scrolling-stars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 200px 1000px;
+    }
+}
+
+@-webkit-keyframes scrolling-stars {
     from {
         background-position: 0 0;
     }
