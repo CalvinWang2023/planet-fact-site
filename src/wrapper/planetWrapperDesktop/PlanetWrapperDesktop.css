@@ -1,0 +1,237 @@
+.planet-page-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 85%;
+    margin: 9.5rem auto;
+}
+
+.planet-page-desktop .show-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px red solid; */
+}
+
+.planet-page-desktop .show-wrapper .wrapper-left {
+    flex-grow: 1;
+    float: left;
+    /* border: 1px yellow solid; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* .planet-page .show-wrapper .wrapper-left .planet-img {
+    border: 1px green solid;
+} */
+
+.planet-page-desktop .show-wrapper .wrapper-left .geology-img {
+    height: 11rem;
+    position: absolute;
+    transform: translate(0, 120%);
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right {
+    width: 37.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    /* border: 1px red solid; */
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts .planet-name h1 {
+    font-family: var(--antonio);
+    font-weight: 400;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--title-color);
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts .planet-content p {
+    font-family: var(--league-spartan);
+    height: 10rem;
+    font-size: 1.3rem;    
+    font-weight: 300;
+    color: var(--menu-color);
+    line-height: 1.3;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source p {
+    color: var(--menu-color);
+    font-size: 1.1rem;
+}
+
+
+.planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source a {
+    font-weight: 700;
+    text-decoration-color: var(--menu-color);
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .show-choices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .show-choices button {
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    border: .8px solid var(--menu-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--league-spartan);
+
+    transition: all .6s;
+    cursor: pointer;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .show-choices button:hover {
+    background-color: var(--hover-color);
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .show-choices button .number {
+    color: var(--menu-color);
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.planet-page-desktop .show-wrapper .wrapper-right .show-choices button .title {
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+
+
+.planet-page-desktop .stats-wrapper {
+    margin-top: 100px;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.planet-page-desktop .stats-wrapper .stats { 
+    border: 1px solid var(--menu-color);
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.planet-page-desktop .stats-wrapper .stats p {
+    color: var(--menu-color);
+    font-size: 1.1rem;
+}
+
+.planet-page-desktop .stats-wrapper .stats h1 {
+    color: var(--title-color);
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .planet-page-desktop .show-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 110px;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-left {
+        float: none;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-left .planet-img {
+        position: static;
+        
+        transform: scale(.7);
+    }
+    .planet-page-desktop .show-wrapper .wrapper-left .geology-img {
+        height: 7rem;
+
+        
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right .texts {
+        width: 80%;
+        gap: 30px;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-name h1 {
+        font-size: 3rem;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-content p {
+        font-size: 1.1rem;
+        height: 9rem;
+    }
+
+    .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source {
+        width: 165px;
+    }
+
+    .planet-page-desktop .show-wrapper .wrapper-right .texts .planet-source p {
+        font-size: 1rem;
+    }
+
+    .planet-page-desktop .show-wrapper .wrapper-right .show-choices {
+        align-items: flex-end;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right .show-choices button {
+        width: 60%;
+        font-size: .8rem;
+        padding: 15px 0;
+        gap: 15px;
+    }
+    .planet-page-desktop .show-wrapper .wrapper-right .show-choices button .number {
+        margin-left: 15px;
+    }
+    .planet-page-desktop .stats-wrapper .stats {
+        padding: 12px;
+        gap: 15px;
+    }
+    .planet-page-desktop .stats-wrapper .stats p {
+        font-size: .9rem;
+    }
+    .planet-page-desktop .stats-wrapper .stats h1 {
+        font-size: 1.4rem;
+    }
+}

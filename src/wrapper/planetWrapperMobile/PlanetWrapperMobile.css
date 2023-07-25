@@ -1,0 +1,147 @@
+.planet-page-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.planet-page-mobile .show-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.planet-page-mobile .show-choices button {
+
+    background-color: transparent;    
+    color: var(--menu-color);
+    text-transform: uppercase;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.planet-page-mobile .show-choices button .hl {
+    width: 0;
+    height: 4px;
+    position: relative;
+    top: 22px;
+
+    transition: all .8s;
+}
+
+.planet-page-mobile .show-choices button .clicked {
+    width: 100%;
+}
+
+.planet-page-mobile .show-choices button p {
+    font-family: var(--league-spartan);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
+.planet-page-mobile .show-wrapper {
+    border-top: .8px solid var(--menu-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet-page-mobile .show-wrapper .planet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.planet-page-mobile .show-wrapper .planet-container img {
+    transform: scale(.5);
+}
+
+.planet-page-mobile .show-wrapper .planet-container .geology-img {
+    height: 6.5rem;
+    position: absolute;
+    transform: translate(0, 100%);
+}
+
+.planet-page-mobile .show-wrapper .planet-name h1 {
+    font-family: var(--antonio);
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--title-color);
+}
+
+.planet-page-mobile .show-wrapper .planet-content p {
+    font-family: var(--league-spartan);
+    height: 6rem;
+    font-size: 1.1rem;    
+    font-weight: 300;
+    color: var(--menu-color);
+    line-height: 1.3;
+    text-align: center;
+
+    width: 70%;
+
+    margin: 40px auto;
+}
+
+.planet-page-mobile .show-wrapper .planet-source {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.planet-page-mobile .show-wrapper .planet-source p {
+    color: var(--menu-color);
+    font-size: 1rem;
+}
+
+.planet-page-mobile .show-wrapper .planet-source a {
+    font-weight: 700;
+    text-decoration-color: var(--menu-color);
+}
+
+.planet-page-mobile .stats-wrapper {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    gap: 15px;
+}
+
+.planet-page-mobile .stats-wrapper .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    border: .8px solid var(--menu-color); 
+    padding: 12px;
+}
+
+.planet-page-mobile .stats-wrapper .stats p {
+    color: var(--menu-color);
+    font-size: 1rem;
+}
+
+.planet-page-mobile .stats-wrapper .stats h1 {
+    color: var(--title-color);
+    font-size: 1.4rem;
+}

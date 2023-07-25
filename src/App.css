@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=League+Spartan:wght@300;400;500;700&display=swap');
+
+:root {
+    /* design color */
+    --title-color: white;
+    --text-color: rgb(235, 226, 226);
+    --menu-color: rgba(255, 255, 255, 0.572);
+    --hover-color: rgba(255, 255, 255, 0.36);
+    /* planets color */
+    --mercury-color: #419DB9;
+    --venus-color: 	hsl(33, 82%, 61%);
+    --earth-color: 	#2D68F0;
+    --mars-color: #c1440e;
+    --jupiter-color: #D2691E;
+    --saturn-color: #d8ae6d;    
+    --uranus-color: #2CC3A8;
+    --neptune-color: #5b5ddf;
+
+    /* fonts */
+    --antonio: 'Antonio', sans-serif;
+    --league-spartan: 'League Spartan', sans-serif;
+}
+
 *,
 ::after,
 ::before {
@@ -9,7 +32,10 @@
 body {
     background-image: url('./assets/background-stars.svg');
     background-color: rgb(5, 5, 32);
-    animation: scrolling-stars 20s linear infinite;
+    animation: scrolling-stars 30s linear infinite;
+
+    min-height: 100vh;
+
 }
 
 @keyframes scrolling-stars {

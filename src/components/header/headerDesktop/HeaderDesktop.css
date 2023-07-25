@@ -1,0 +1,94 @@
+.header-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: .8px solid var(--menu-color);
+}
+
+.header-desktop .site-icon {
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-family: var(--antonio);
+    margin-left: 40px;
+    letter-spacing: 1.2px;
+}
+
+.header-desktop .site-icon h1 {
+    font-weight: 400;
+    transition: .3s;
+}
+
+.header-desktop .site-icon h1:hover {
+    transform: scale(1.1);
+}
+
+.header-desktop .menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+
+    margin-right: 40px;
+}
+
+.header-desktop .menu-list .planet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-desktop .menu-list .planet .hl {
+    position: absolute;
+    width: 0%;
+    top: -42px;
+    transition: all .7s;
+    height: 5.5px;
+}
+
+.header-desktop .menu-list .planet .clicked {
+    width: 100%;
+}
+
+.header-desktop .menu-list .planet button {
+    background: transparent;
+    font-size: 1rem;
+    color: var(--menu-color);
+    text-transform: uppercase;
+    font-family: var(--league-spartan);
+    font-weight: 700;
+    letter-spacing: 1.2px;
+
+    transition: .3s;
+    cursor: pointer;
+}
+
+.header-desktop .menu-list .planet:hover .hl {
+    width: 100%;
+}
+
+.header-desktop .menu-list .planet:hover button {
+    color: var(--title-color);
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-desktop {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .header-desktop .menu-list {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .header-desktop .menu-list .planet .hl {
+        top: 120%;
+        height: 4px;
+    }
+} 
