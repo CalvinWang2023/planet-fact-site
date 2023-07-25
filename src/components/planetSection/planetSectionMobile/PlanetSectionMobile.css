@@ -4,15 +4,14 @@
     align-items: center;
 
     margin-bottom: 50px;
-    width: 100%;
 }
 
 .planet-page-mobile .show-choices {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    gap: 50px;
 }
 
 .planet-page-mobile .show-choices button {
