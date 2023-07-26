@@ -36,22 +36,12 @@ body {
     background-repeat: repeat;
     position: relative;
     z-index: -999;
-    -webkit-animation: scrolling-stars 30s linear infinite;
-            animation: scrolling-stars 30s linear infinite;
+    animation: scrolling-stars 30s linear infinite;
     animation-direction: alternate;
     overflow-x: hidden;
 }
 
 @keyframes scrolling-stars {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 200px 1000px;
-    }
-}
-
-@-webkit-keyframes scrolling-stars {
     from {
         background-position: 0 0;
     }
