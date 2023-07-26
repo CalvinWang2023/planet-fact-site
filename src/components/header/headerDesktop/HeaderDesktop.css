@@ -55,6 +55,10 @@
     width: 100%;
 }
 
+.header-desktop .menu-list .planet #planet-clicked {
+    color: var(--title-color);
+}
+
 .header-desktop .menu-list .planet button {
     background: transparent;
     border: none;
