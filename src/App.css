@@ -59,3 +59,15 @@ body {
         background-position: 200px 1000px;
     }
 }
+
+::-webkit-scrollbar {
+    max-width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2D68F0;
+}
