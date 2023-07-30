@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import iconSource from '../../../assets/icon-source.svg';
 import './PlanetSectionMobile.css';
+import data from '../../../data.json';
 
-const PlanetSectionMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
+const PlanetSectionMobile = ({ imgPlanet, imgInternal, imgGeology, planet }) => {
     const [show, setShow] = useState('0');
+    const planetData = data[planet];
 
     const geologyImg = 
     show == '2' 
@@ -38,13 +40,13 @@ const PlanetSectionMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
 
     const content =        
         show === '0' ? 
-            data.ov_content : show === '1' ?
-            data.sd_content : data.gy_content;
-
+            planetData.overview.content : show === '1' ?
+            planetData.structure.content : planetData.geology.content;
+    
     const source =       
         show === '0' ? 
-            data.ov_source : show === '1' ?
-            data.sd_source : data.gy_source;
+            planetData.overview.source : show === '1' ?
+            planetData.structure.source : planetData.geology.source;
 
     return (
         <div className="planet-page-mobile">
@@ -78,7 +80,7 @@ const PlanetSectionMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
                     { geologyImg }
                 </div>
                 <div className={show === '2' ? 'planet-name posi-down' : 'planet-name'}>
-                    <h1>{ data.name }</h1>
+                    <h1>{ planetData.name }</h1>
                 </div>
                 <div className="texts">
                     <div className="planet-content">
@@ -98,19 +100,19 @@ const PlanetSectionMobile = ({ data, imgPlanet, imgInternal, imgGeology, planet 
             <div className="stats-wrapper">
                 <div className="stats">
                     <p>Rotation Time</p>
-                    <h1>{ data.rotation }</h1>
+                    <h1>{ planetData.rotation }</h1>
                 </div>
                 <div className="stats">
                     <p>Revolution Time</p>
-                    <h1>{ data.revolution }</h1>
+                    <h1>{ planetData.revolution }</h1>
                 </div>
                 <div className="stats">
                     <p>Radius Time</p>
-                    <h1>{ data.radius }</h1>
+                    <h1>{ planetData.radius }</h1>
                 </div>
                 <div className="stats">
                     <p>Temperature Time</p>
-                    <h1>{ data.temperature }</h1>
+                    <h1>{ planetData.temperature }</h1>
                 </div>
             </div>
         </div>

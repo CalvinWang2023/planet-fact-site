@@ -3,19 +3,15 @@ import earthImg from '../../assets/planet-earth.svg';
 import earthInternal from '../../assets/planet-earth-internal.svg';
 import earthGeology from '../../assets/geology-earth.png';
 
-const Earth = ({ data }) => {
-    if (data !== undefined) {
-        return (
-            <PlanetSection 
-                data={ data } 
-                imgPlanet={ earthImg } 
-                imgInternal={ earthInternal } 
-                imgGeology={ earthGeology } 
-                planet={ '2' }
-            />
-        ) 
-    } 
-    return null;
+const Earth = () => {
+    return (
+        <PlanetSection 
+            imgPlanet={ earthImg } 
+            imgInternal={ earthInternal } 
+            imgGeology={ earthGeology } 
+            planet={ 2 }
+        />   
+    )
 }
 
 export default Earth

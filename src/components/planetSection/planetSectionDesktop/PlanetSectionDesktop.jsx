@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import iconSource from '../../../assets/icon-source.svg';
 import './PlanetSectionDesktop.css';
+import data from '../../../data.json';
 
-const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet }) => {
+const PlanetSectionDesktop = ({ imgPlanet, imgInternal, imgGeology, planet }) => {
     const [show, setShow] = useState('0');
+    const planetData = data[planet];
 
     const geologyImg = 
     show == '2' 
@@ -13,19 +15,19 @@ const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet
         : ''
 
     const buttonStyle = 
-    planet === '0' 
+    planet === 0
         ? { backgroundColor: 'var(--mercury-color)' } 
-        : planet === '1' 
+        : planet === 1 
         ? { backgroundColor: 'var(--venus-color)' }
-        : planet === '2' 
+        : planet === 2 
         ? { backgroundColor: 'var(--earth-color)' }
-        : planet === '3' 
+        : planet === 3 
         ? { backgroundColor: 'var(--mars-color)' }
-        : planet === '4' 
+        : planet === 4 
         ? { backgroundColor: 'var(--jupiter-color)' }
-        : planet === '5' 
+        : planet === 5 
         ? { backgroundColor: 'var(--saturn-color)' }
-        : planet === '6' 
+        : planet === 6 
         ? { backgroundColor: 'var(--uranus-color)' }
         : { backgroundColor: 'var(--neptune-color)' };
     
@@ -38,13 +40,13 @@ const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet
 
     const content =        
         show === '0' ? 
-            data.ov_content : show === '1' ?
-            data.sd_content : data.gy_content;
+            planetData.overview.content : show === '1' ?
+            planetData.structure.content : planetData.geology.content;
 
     const source =       
         show === '0' ? 
-            data.ov_source : show === '1' ?
-            data.sd_source : data.gy_source;
+            planetData.overview.source : show === '1' ?
+            planetData.structure.source : planetData.geology.source;
             
     return (
         <div className="planet-page-desktop">
@@ -56,7 +58,7 @@ const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet
                 <div className="wrapper-right">
                     <div className="texts">
                         <div className="planet-name">
-                            <h1>{ data.name }</h1>
+                            <h1>{ planetData.name }</h1>
                         </div>
                         <div className="planet-content">
                             <p>{ content }</p>
@@ -105,19 +107,19 @@ const PlanetSectionDesktop = ({ data, imgPlanet, imgInternal, imgGeology, planet
             <div className="stats-wrapper">
                 <div className="stats">
                     <p>Rotation Time</p>
-                    <h1>{ data.rotation }</h1>
+                    <h1>{ planetData.rotation }</h1>
                 </div>
                 <div className="stats">
                     <p>Revolution Time</p>
-                    <h1>{ data.revolution }</h1>
+                    <h1>{ planetData.revolution }</h1>
                 </div>
                 <div className="stats">
                     <p>Radius Time</p>
-                    <h1>{ data.radius }</h1>
+                    <h1>{ planetData.radius }</h1>
                 </div>
                 <div className="stats">
                     <p>Temperature Time</p>
-                    <h1>{ data.temperature }</h1>
+                    <h1>{ planetData.temperature }</h1>
                 </div>
             </div>
         </div>
